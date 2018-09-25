@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 
+@import "_menu";
+
 body {
   @include background;
   background: $primary-color;
