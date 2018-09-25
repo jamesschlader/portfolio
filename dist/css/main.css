@@ -58,7 +58,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../dist/images/portrait);
+      background: url(../dist/images/portrait.jpg);
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -82,16 +82,45 @@
       color: #eece1a; }
 
 .nav-item:nth-child(1) {
-  trnasition-delay: 0.1s; }
+  transition-delay: 0.1s; }
 
 .nav-item:nth-child(2) {
-  trnasition-delay: 0.2s; }
+  transition-delay: 0.2s; }
 
 .nav-item:nth-child(3) {
-  trnasition-delay: 0.3s; }
+  transition-delay: 0.3s; }
 
 .nav-item:nth-child(4) {
-  trnasition-delay: 0.4s; }
+  transition-delay: 0.4s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../dist/images/portrait_small.jpg"); } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
 
 body {
   background: #444;
