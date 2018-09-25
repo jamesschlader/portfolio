@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-@import "_menu";
+@import "menu";
+
+@import "mobile";
 
 body {
   @include background;
