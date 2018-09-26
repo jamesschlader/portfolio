@@ -1,8 +1,8 @@
-$primary-color: rgb(59, 60, 61);
-$secondary-color: #eece1a;
-$show-home-image: "true";
-$home-image: url("../dist/images/andrey-grinkevich-359417-unsplash.jpg");
-$background-opacity: 0.7;
+$primary-color: #bcd5f2;
+$secondary-color: #ed3800;
+$show-home-image: true;
+$home-image: url("../images/andrey-grinkevich-359417-unsplash.jpg");
+$background-opacity: 0.5;
 
 @mixin easeOut {
   transition: all 0.75s ease-out;
@@ -22,7 +22,7 @@ $background-opacity: 0.7;
         right: 0;
         width: 100%;
         height: 100%;
-        z-index: -10;
+        z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
     }
