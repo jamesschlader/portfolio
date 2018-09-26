@@ -17,8 +17,8 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(-7px, 6px); }
-    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
@@ -43,14 +43,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #581212;
+    background: #2e2f30;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #6d1616;
+    background: #3b3c3d;
     transition: all 0.75s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -58,9 +58,12 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../dist/images/portrait.jpg);
+      background: url("../images/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #eece1a;
+      background-size: cover;
+      z-index: 5;
+      opacity: 1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.75s ease-out; }
@@ -94,14 +97,14 @@
   transition-delay: 0.4s; }
 
 body {
-  background: #6d1616;
+  background: #3b3c3d;
   color: white;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../dist/images/background.jpeg);
+    background-image: url("./dist/images/background.jpeg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -112,7 +115,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(109, 22, 22, 0.9); }
+      background: rgba(59, 60, 61, 0.7); }
 
 h1,
 h2,
@@ -128,7 +131,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(117, 24, 24, 0.5); }
+    background: rgba(64, 65, 66, 0.5); }
 
 a {
   color: white;
@@ -183,7 +186,7 @@ main {
   grid-area: job3; }
 
 .job {
-  background: ligthen(#6d1616, 5);
+  background: ligthen(#3b3c3d, 5);
   padding: 0.5rem;
   border-bottom: #eece1a 3px solid; }
 
@@ -232,13 +235,13 @@ main {
   color: white; }
 
 .btn-light {
-  background: #ea9898;
+  background: #babcbd;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #430d0d;
+  background: #222323;
   color: white;
   height: 60px; }
 
