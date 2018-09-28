@@ -34,7 +34,7 @@ h3 {
 }
 
 a {
-  color: $set-text-color;
+  color: #f3a546;
   text-decoration: none;
 }
 
@@ -188,4 +188,4 @@ main {
   height: 60px;
 }
 
-@import "mobile";
+@import "_mobile";
