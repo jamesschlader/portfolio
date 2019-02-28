@@ -5,12 +5,19 @@ const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const card = document.querySelectorAll(".card");
 
 //set state of menu
 let showMenu = false;
 
 //add event listeners
 menuBtn.addEventListener("click", toggleMenu);
+
+card.forEach(item => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("flipped");
+  });
+});
 
 function toggleMenu() {
   if (!showMenu) {
@@ -30,4 +37,12 @@ function toggleMenu() {
 
     showMenu = false;
   }
+}
+
+function flip() {
+  event.stopPropagation();
+  const { flipped } = event.target.attributes;
+  console.log(event);
+  console.log(`id = ${flipped}`);
+  event.target.classList.toggle("flipped");
 }
