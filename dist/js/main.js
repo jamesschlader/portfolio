@@ -42,7 +42,6 @@ function toggleMenu() {
 function flip() {
   event.stopPropagation();
   const { flipped } = event.target.attributes;
-  console.log(event);
-  console.log(`id = ${flipped}`);
+
   event.target.classList.toggle("flipped");
 }
